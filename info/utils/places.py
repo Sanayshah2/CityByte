@@ -27,3 +27,16 @@ class FourSquare(PlacesUtilBase):
         )
 
         return response.json()
+
+
+
+    def get_place_photo(self, fsq_id: str, **kwargs):
+        response = requests.request(
+            "GET", str(self._url.get_url(path=f"/v3/places/{fsq_id}/photos")),
+            headers=self._url.with_default_headers(),
+            params=self._url.with_default_params(),
+        )
+
+        photo_data = response.json()[0]
+
+        return f"{photo_data['prefix']}250x250{photo_data['suffix']}"
