@@ -24,7 +24,7 @@ class WeatherBit(WeatherUtilBase):
 
         response = requests.request(
             "GET", str(self._url.get_url(path="/current")),
-            
+            headers=self._url.with_default_headers(),
             params=params,
         )
 
