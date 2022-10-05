@@ -11,3 +11,12 @@ class CityPhotoHelperBase(ABC):
     @abstractmethod
     def get_city_photo(self, city: str):
         pass
+
+    
+class UnplashCityPhotoHelper(CityPhotoHelperBase):
+    def __init__(self, klass: PhotoUtilBase = None, url: URL = None):
+        if url is None:
+            klass = Unsplash
+            url = URL(**settings.UNSPLASH_CONFIG)
+
+        self._photo_util = klass(url=url)
