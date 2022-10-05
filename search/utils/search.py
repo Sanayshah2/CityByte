@@ -28,3 +28,19 @@ class GeoDB(SearchUtilBase):
         )
 
         return response.json()
+    
+
+class AmadeusCitySearch(SearchUtilBase):
+    def get_city_suggestions(self, city: str, **kwargs):
+        params = self._url.with_default_params({"keyword": city})
+        params.update(kwargs)
+       
+        response = requests.request(
+            "GET", str(self._url.get_url(path="/v1/reference-data/locations/cities")),
+            headers={
+                "Authorization": f"Bearer {self._access_token}"
+            },
+            params=params
+        )
+
+        return response.json()
