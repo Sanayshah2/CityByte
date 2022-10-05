@@ -4,6 +4,7 @@ from django.views.decorators.http import require_http_methods
 
 from search.helpers.autocomplete import GenericDBSearchAutoCompleteHelper
 from search.helpers.photo import UnplashCityPhotoHelper
+from info.helpers.places import FourSquarePlacesHelper
 
 @require_http_methods(["GET"])
 def main_page(request):
@@ -25,3 +26,9 @@ def city_photo(request):
     return JsonResponse({
         "path": photo_link
     })
+@require_http_methods(["GET"])
+def place_photo(request):
+    photo_link = FourSquarePlacesHelper().get_place_photo(fsq_id=request.GET.get('fsq_id'))
+    # print("**************",request.GET.get('fsq_id'))
+    # print("...........",photo_link)
+    return redirect(photo_link)
