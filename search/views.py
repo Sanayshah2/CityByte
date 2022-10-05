@@ -29,6 +29,4 @@ def city_photo(request):
 @require_http_methods(["GET"])
 def place_photo(request):
     photo_link = FourSquarePlacesHelper().get_place_photo(fsq_id=request.GET.get('fsq_id'))
-    # print("**************",request.GET.get('fsq_id'))
-    # print("...........",photo_link)
     return redirect(photo_link)
