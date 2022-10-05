@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_http_methods
 
 from search.helpers.autocomplete import GenericDBSearchAutoCompleteHelper
+from search.helpers.photo import UnplashCityPhotoHelper
 
 @require_http_methods(["GET"])
 def main_page(request):
@@ -16,4 +17,11 @@ def city_suggestions(request):
     
     return JsonResponse({
         "results": suggestions_data.get("data", [])
+    })
+
+@require_http_methods(["GET"])
+def city_photo(request):
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=request.GET.get("q"))
+    return JsonResponse({
+        "path": photo_link
     })
