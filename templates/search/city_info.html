@@ -204,6 +204,21 @@
             </div>
         {% endfor %}
     </div>
+    <h2 style="margin: 4rem 0 1rem 1rem;">Top Landmark Spots</h2>
+    <div class="d-flex flex-wrap" style="margin: 1rem;">
+        {% for place in outdoor_info.results %}
+            <div class="card" style="width: 18rem;">
+                <img src="{% url 'info:place_photo' %}?fsq_id={{ place.fsq_id }}" class="card-img-top" alt="{{ place.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ place.name }}</h5>
+                    <p class="card-text">{{ place.location.formatted_address }}</p>
+                </div>
+                <div class="card-footer">
+                    {{ place.categories.0.name }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
     {% if airport_info.results %}
         <h2 style="margin: 4rem 0 1rem 1rem;">Airports</h2>
         <div class="d-flex flex-wrap" style="margin: 1rem;">
