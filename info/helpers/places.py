@@ -21,3 +21,6 @@ class FourSquarePlacesHelper(CityPlacesHelperBase):
 
     def get_places(self, city: str, **kwargs):
         return self._places_util.get_places(city=city, **kwargs)
+
+    def get_place_photo(self, fsq_id: str):
+        return self._places_util.get_place_photo(fsq_id=fsq_id)
