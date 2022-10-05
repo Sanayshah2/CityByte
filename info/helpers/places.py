@@ -10,3 +10,14 @@ class CityPlacesHelperBase(ABC):
     @abstractmethod
     def get_places(self, city: str, **kwargs):
         pass
+
+class FourSquarePlacesHelper(CityPlacesHelperBase):
+    def __init__(self, klass: PlacesUtilBase = None, url: URL = None):
+        if url is None:
+            klass = FourSquare
+            url = URL(**settings.FOURSQUARE_CONFIG)
+
+        self._places_util = klass(url=url)
+
+    def get_places(self, city: str, **kwargs):
+        return self._places_util.get_places(city=city, **kwargs)
