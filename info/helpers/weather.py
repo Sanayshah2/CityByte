@@ -19,3 +19,6 @@ class WeatherBitHelper(CityWeatherHelperBase):
             url = URL(**settings.WEATHER_BIT_CONFIG)
 
         self._weather_util = klass(url=url)
+
+    def get_city_weather(self, city: str, **kwargs):
+        return self._weather_util.get_city_weather(city=city, **kwargs)
