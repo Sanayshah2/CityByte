@@ -130,7 +130,7 @@ GEODB_CONFIG = {
     "port": 443,
     "headers": {
         'x-rapidapi-key': os.environ.get("GEODB_X_RAPID_API_KEY"),
-        'x-rapidapi-host': os.environ.get("GEODB_X_RAPID_API_HOST", "wft-geo-db.p.rapidapi.com")
+        'x-rapidapi-host': os.environ.get("GEODB_X_RAPID_API_HOST")
     }
 }
 
@@ -149,7 +149,7 @@ UNSPLASH_CONFIG = {
     "host": "api.unsplash.com",
     "port": 443,
     "headers": {
-        'Authorization': f"Client-ID {os.environ.get('UNSPLASH_API_KEY','kq0qtPCpQxXzz6GFdud7GdTUDeoZVsg5FY315Q3YaJs')}",
+        'Authorization': f"Client-ID {os.environ.get('UNSPLASH_API_KEY')}",
     }
 }
 
@@ -158,7 +158,7 @@ FOURSQUARE_CONFIG = {
     "host": "api.foursquare.com",
     "port": 443,
     "headers": {
-        'Authorization': os.environ.get("FOURSQUARE_API_KEY","fsq3SClA3JQDrZrvB7TTuWIbtrVVrPLoeMxddCzAumA0Pwo="),
+        'Authorization': os.environ.get("FOURSQUARE_API_KEY"),
     }
 }
 
@@ -167,7 +167,7 @@ WEATHER_BIT_CONFIG = {
     "host": "weatherbit-v1-mashape.p.rapidapi.com",
     "port": 443,
     "headers": {
-        'X-RapidAPI-Key': os.environ.get("WEATHER_BIT_X_RAPID_API_KEY","b10f84e730mshfccb45f5fcaab22p17ac3djsn634658a62b18"),
-        'X-RapidAPI-Host': os.environ.get("WEATHER_BIT_X_RAPID_API_HOST", "weatherbit-v1-mashape.p.rapidapi.com"),
+        'X-RapidAPI-Key': os.environ.get("WEATHER_BIT_X_RAPID_API_KEY"),
+        'X-RapidAPI-Host': os.environ.get("WEATHER_BIT_X_RAPID_API_HOST"),
     }
 }
