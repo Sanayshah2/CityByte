@@ -204,6 +204,20 @@
             </div>
         {% endfor %}
     </div>
+    {% if airport_info.results %}
+        <h2 style="margin: 4rem 0 1rem 1rem;">Airports</h2>
+        <div class="d-flex flex-wrap" style="margin: 1rem;">
+            {% for place in airport_info.results %}
+                <div class="card" style="width: 18rem;">
+                    <img src="{% url 'info:place_photo' %}?fsq_id={{ place.fsq_id }}" class="card-img-top" alt="{{ place.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.75rem">{{ place.name }}</h5>
+                        <p class="card-text" style="font-size: 1rem;">{{ place.location.formatted_address }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
 </div>
 </body>
 </html>
