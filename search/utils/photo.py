@@ -14,3 +14,21 @@ class PhotoUtilBase(ABC):
     @abstractmethod
     def get_photos(self, city: str, **kwargs):
         pass
+    
+    
+class Unsplash(PhotoUtilBase):
+    class Orientation:
+        LANDSCAPE = "landscape"
+        PORTRAIT = "portrait"
+
+    def get_photos(self, query: str, **kwargs):
+        page = kwargs.get("page", 1)
+        orientation = kwargs.get("orientation", Unsplash.Orientation.LANDSCAPE)
+
+        response = requests.request(
+            "GET", str(self._url.get_url(path="/search/photos")),
+            headers=self._url.with_default_headers(),
+            params=self._url.with_default_params({"page": page, "orientation": orientation, "query": query})
+        )
+
+        return response.json().get("results", [])
