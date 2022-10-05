@@ -133,3 +133,12 @@ GEODB_CONFIG = {
         'x-rapidapi-host': os.environ.get("GEODB_X_RAPID_API_HOST", "wft-geo-db.p.rapidapi.com")
     }
 }
+
+FOURSQUARE_CONFIG = {
+    "protocol": "https",
+    "host": "api.foursquare.com",
+    "port": 443,
+    "headers": {
+        'Authorization': os.environ.get("FOURSQUARE_API_KEY","fsq3SClA3JQDrZrvB7TTuWIbtrVVrPLoeMxddCzAumA0Pwo="),
+    }
+}
