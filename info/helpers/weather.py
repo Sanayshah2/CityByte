@@ -10,3 +10,12 @@ class CityWeatherHelperBase(ABC):
     @abstractmethod
     def get_city_weather(self, city: str, **kwargs):
         pass
+
+
+class WeatherBitHelper(CityWeatherHelperBase):
+    def __init__(self, klass: WeatherUtilBase = None, url: URL = None):
+        if url is None:
+            klass = WeatherBit
+            url = URL(**settings.WEATHER_BIT_CONFIG)
+
+        self._weather_util = klass(url=url)
