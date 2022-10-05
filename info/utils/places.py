@@ -14,7 +14,8 @@ class PlacesUtilBase(ABC):
     @abstractmethod
     def get_places(self, city: str, **kwargs):
         pass
-    
+
+
 class FourSquare(PlacesUtilBase):
     def get_places(self, city: str, **kwargs):
         params = self._url.with_default_params({"near": city})
@@ -27,8 +28,6 @@ class FourSquare(PlacesUtilBase):
         )
 
         return response.json()
-
-
 
     def get_place_photo(self, fsq_id: str, **kwargs):
         response = requests.request(
