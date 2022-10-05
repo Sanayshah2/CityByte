@@ -20,3 +20,11 @@ class UnplashCityPhotoHelper(CityPhotoHelperBase):
             url = URL(**settings.UNSPLASH_CONFIG)
 
         self._photo_util = klass(url=url)
+
+    def get_city_photo(self, city: str):
+        photo_list = self._photo_util.get_photos(query=city)
+
+        if len(photo_list) == 0:
+            return None
+
+        return photo_list[1]["urls"]["regular"]
