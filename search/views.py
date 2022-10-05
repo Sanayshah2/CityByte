@@ -57,6 +57,8 @@ def info_page(request):
     arts_info = FourSquarePlacesHelper().get_places(
         city=f"{city}, {country}", categories="10000", sort="RELEVANCE", limit=5)
 
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+
     return render(
         request, 'search/city_info.html',
         context={
@@ -65,5 +67,6 @@ def info_page(request):
             "airport_info": airport_info,
             "outdoor_info": outdoor_info,
             "arts_info": arts_info,
+            "photo_link": photo_link,
         }
     )
