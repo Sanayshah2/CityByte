@@ -10,7 +10,10 @@ def main_page(request):
 
 @require_http_methods(["GET"])
 def city_suggestions(request):
-    suggestions_data = GenericDBSearchAutoCompleteHelper().get_suggestions(city=request.GET.get("q"))
-    city_list = [obj["city"] for obj in suggestions_data["data"]]
-
-    return JsonResponse({"data": city_list})
+    suggestions_data = GenericDBSearchAutoCompleteHelper(
+        klass=AmadeusCitySearch, url=URL(**settings.AMADEUS_CONFIG)
+    ).get_suggestions(city=request.GET.get("q"), max=10)
+    
+    return JsonResponse({
+        "results": suggestions_data.get("data", [])
+    })
