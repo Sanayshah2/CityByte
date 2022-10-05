@@ -54,6 +54,8 @@ def info_page(request):
         city=f"{city}, {country}", categories="19040", sort="RELEVANCE", limit=5)
     outdoor_info = FourSquarePlacesHelper().get_places(
         city=f"{city}, {country}", categories="16000", sort="RELEVANCE", limit=5)
+    arts_info = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="10000", sort="RELEVANCE", limit=5)
 
     return render(
         request, 'search/city_info.html',
@@ -62,5 +64,6 @@ def info_page(request):
             "dining_info": dining_info,
             "airport_info": airport_info,
             "outdoor_info": outdoor_info,
+            "arts_info": arts_info,
         }
     )
