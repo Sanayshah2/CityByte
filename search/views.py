@@ -32,3 +32,17 @@ def city_photo(request):
 def place_photo(request):
     photo_link = FourSquarePlacesHelper().get_place_photo(fsq_id=request.GET.get('fsq_id'))
     return redirect(photo_link)
+
+@require_http_methods(["GET"])
+def info_page(request):
+    city = request.GET.get("city")
+    country = request.GET.get("country")
+
+    weather_info = WeatherBitHelper().get_city_weather(city=city, country=country)["data"][0]
+
+    return render(
+        request, 'search/city_info.html',
+        context={
+            "weather_info": weather_info,
+        }
+    )
