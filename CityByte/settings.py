@@ -142,3 +142,13 @@ FOURSQUARE_CONFIG = {
         'Authorization': os.environ.get("FOURSQUARE_API_KEY","fsq3SClA3JQDrZrvB7TTuWIbtrVVrPLoeMxddCzAumA0Pwo="),
     }
 }
+
+WEATHER_BIT_CONFIG = {
+    "protocol": "https",
+    "host": "weatherbit-v1-mashape.p.rapidapi.com",
+    "port": 443,
+    "headers": {
+        'X-RapidAPI-Key': os.environ.get("WEATHER_BIT_X_RAPID_API_KEY","b10f84e730mshfccb45f5fcaab22p17ac3djsn634658a62b18"),
+        'X-RapidAPI-Host': os.environ.get("WEATHER_BIT_X_RAPID_API_HOST", "weatherbit-v1-mashape.p.rapidapi.com"),
+    }
+}
