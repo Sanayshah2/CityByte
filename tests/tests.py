@@ -16,6 +16,6 @@ def test_photo():
 def test_cityphoto():
     photo_link = UnplashCityPhotoHelper().get_city_photo(city='Pune')
     site = urlopen(photo_link)
-    meta = site.info()  # get header of the http request
-    if meta["content-type"] in image_formats:  # check if the content-type is a image
+    meta = site.info() 
+    if meta["content-type"] in image_formats: 
         assert True
