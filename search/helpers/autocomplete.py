@@ -21,5 +21,5 @@ class GenericDBSearchAutoCompleteHelper(SearchAutoCompleteHelperBase):
 
         self._search_util = klass(url=url)
 
-    def get_suggestions(self, city: str):
-        return self._search_util.get_city_suggestions(city=city)
+    def get_suggestions(self, city: str, **kwargs):
+        return self._search_util.get_city_suggestions(city=city, **kwargs)
