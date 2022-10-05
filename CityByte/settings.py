@@ -134,6 +134,15 @@ GEODB_CONFIG = {
     }
 }
 
+UNSPLASH_CONFIG = {
+    "protocol": "https",
+    "host": "api.unsplash.com",
+    "port": 443,
+    "headers": {
+        'Authorization': f"Client-ID {os.environ.get('UNSPLASH_API_KEY','kq0qtPCpQxXzz6GFdud7GdTUDeoZVsg5FY315Q3YaJs')}",
+    }
+}
+
 FOURSQUARE_CONFIG = {
     "protocol": "https",
     "host": "api.foursquare.com",
