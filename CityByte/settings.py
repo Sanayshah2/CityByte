@@ -134,6 +134,16 @@ GEODB_CONFIG = {
     }
 }
 
+AMADEUS_CONFIG = {
+    "protocol": "https",
+    "host": "test.api.amadeus.com",
+    "port": 443,
+    "headers": {
+        "API_KEY": os.environ.get("AMADEUS_API_KEY"),
+        "API_SECRET_KEY": os.environ.get("AMADEUS_API_SECRET_KEY"),
+    }
+}
+
 UNSPLASH_CONFIG = {
     "protocol": "https",
     "host": "api.unsplash.com",
