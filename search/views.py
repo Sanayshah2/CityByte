@@ -47,9 +47,13 @@ def info_page(request):
 
     weather_info = WeatherBitHelper().get_city_weather(city=city, country=country)["data"][0]
 
+    dining_info = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="13065", sort="RELEVANCE", limit=5)
+
     return render(
         request, 'search/city_info.html',
         context={
             "weather_info": weather_info,
+            "dining_info": dining_info,
         }
     )
