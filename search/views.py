@@ -5,6 +5,8 @@ from django.views.decorators.http import require_http_methods
 from search.helpers.autocomplete import GenericDBSearchAutoCompleteHelper
 from search.helpers.photo import UnplashCityPhotoHelper
 from info.helpers.places import FourSquarePlacesHelper
+from search.utils.search import AmadeusCitySearch
+from search.utils.url import URL
 
 @require_http_methods(["GET"])
 def main_page(request):
