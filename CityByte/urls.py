@@ -24,3 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/search/', include("search.urls")),
     path('api/info/', include(("info.urls", "info"), namespace="info")),
+]
