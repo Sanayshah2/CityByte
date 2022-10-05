@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from django.conf import settings
 
 from search.utils.baseutils.search import SearchUtilBase
-from search.utils.geodb import GeoDB
+from search.utils.search import GeoDB
 from search.utils.url import URL
 
 
