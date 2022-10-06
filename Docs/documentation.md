@@ -85,3 +85,4 @@ Test Case 4: test_cityphoto is the test case for testing the UnplashCityPhotoHel
 * Chasing results from API using Redis in order to improve the performance.
 * Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
 * To run multiple API requests simultaneously, multithreading will be used.
+* Various multiple features about cities can be added as per the user requirements and customer segmentation.
