@@ -22,6 +22,6 @@ urlpatterns = [
     path('', main_page, name="main_page"),
     path('city', info_page, name="info_page"),
     path('admin/', admin.site.urls),
-    path('api/search/', include("search.urls")),
+    path('api/search/', include("search.urls", namespace="search")),
     path('api/info/', include(("info.urls", "info"), namespace="info")),
 ]
