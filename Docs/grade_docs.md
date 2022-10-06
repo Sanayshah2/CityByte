@@ -56,3 +56,9 @@
 | Is your source code stored in a repository under revision control? | 3 |
 | Is each source code release a snapshot of the repository? | 3 |
 | Are releases tagged in the repository? | 3 |
+| Is there a branch of the repository that is always stable? | 3 |
+| Do you back-up your repository? | 3 |
+| Do you provide publicly-available instructions for building your software from the source code? | 3 |
+|  Can you build, or package, your software using an automated tool?
+e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) | 3 |
+| Do you provide publicly-available instructions for deploying your software? | 3 |
