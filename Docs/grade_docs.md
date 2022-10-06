@@ -33,6 +33,12 @@
 | Does your website and documentation clearly describe the type of user who should use your software? | 3 | yes
 |  Do you publish case studies to show how your software has been used by yourself and others? | 3 | yes
 | Is the name of your project/software unique? |3| Yes
+| Does your documentation list all third-party dependencies? | 3 |
+| Does your documentation list the version number for all third-party dependencies? | 3 |
+| Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional? | 3 |
+| Can you download dependencies using a dependency management tool or package manager?
+e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python pip (https://pypi.python.org/pypi/pip) or setuptools (https://pypi.python.org/pypi/setuptools), PHP Composer (https://getcomposer.org/), Ruby gems (https://rubygems.org), or R PackRat (https://rstudio.github.io/packrat/) | 3 |
+| Do you have tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful? | 3 |
 | Is your project/software name free from trademark violations? | 3 | Yes
 | Is your software available for free? | 3 | Yes
 |  Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository? | 3 | Yes
