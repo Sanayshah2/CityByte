@@ -65,6 +65,5 @@ e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python
 | Is there a branch of the repository that is always stable? | 3 |
 | Do you back-up your repository? | 3 |
 | Do you provide publicly-available instructions for building your software from the source code? | 3 |
-|  Can you build, or package, your software using an automated tool?
-e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) | 3 |
+|  Can you build, or package, your software using an automated tool? e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) | 3 |
 | Do you provide publicly-available instructions for deploying your software? | 3 |
