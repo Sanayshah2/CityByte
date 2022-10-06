@@ -37,9 +37,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        HUB_AUTH_TOKEN: ${{ secrets.HUB_AUTH_TOKEN }}
-        HUB_BASE_URL: ${{ secrets.HUB_BASE_URL }}
-        HUB_PROJECT_UID: ${{ secrets.HUB_PROJECT_UID }}
-        HUB_PRODUCT_UID: ${{ secrets.HUB_PRODUCT_UID }}
         pytest
         run: yarn test:coverage
