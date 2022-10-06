@@ -54,6 +54,6 @@ Fix problems that are important to users
 
 Enable a sustainable system for the projects maintainers to review contributions
 
-## How can the project be exteneded?
+## How can the project be extended?
 
 The project can be extended by adding multiple features without changing the current source code. This can be done by writing the backend logic in the views.py file and the frontend part in the templates file of the django project. Apart from that the performance can be improved by chasing results from API using redix. The search bar can be added based on the category filter which can make the project more user friendly. To run multiple api simultaneously, multithreading can also be implemented.
