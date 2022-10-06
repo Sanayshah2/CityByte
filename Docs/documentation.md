@@ -73,4 +73,10 @@ CityByte\search\tests\test_photo.py
 Initially there are four test cases that have been used for validation of the software.
 
 Test Case 1: test_main_page is the first test case that renders the search.html template which runs the main page of our website.
+
 Test Case 2: test_info_page is the second test case for the validation of user request fetching, when a user is entering a city, the test case would check whether the information in the request has been received. After that the information fetched is checked which includes the data regarding weather, time zone, dining information, outdoor information, airport details and arts & museum data. At the end it verifies the rendering of the request for all the given features: weather_info, dining_info, outdoor_info, airport_info, photo_link, & arts_link.
+
+Test Case 3: test_photo is our third test case that checks the photo_link, and makes sure that the photo is not fetched instead of the url from the http request.
+
+Test Case 4: test_cityphoto is the test case for testing the UnplashCityPhotoHelper which is redirected from photo_link to site, to get the header of the http request. This test case checks whether the content type is an image.
+
