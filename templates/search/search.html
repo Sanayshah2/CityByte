@@ -106,7 +106,7 @@
     function getCityPhoto(city, callback1) {
         let xhr1 = new XMLHttpRequest();
 
-        let url1 = new URL('{% url 'search:city_photo' %}');
+        let url1 = new URL('{{ request.scheme }}://{{ request.get_host }}{% url 'search:city_photo' %}');
         url1.searchParams.set('q', city);
 
         xhr1.onload = function(e) {
