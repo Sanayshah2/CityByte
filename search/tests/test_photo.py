@@ -12,10 +12,3 @@ def test_photo():
     if meta["content-type"] in image_formats: 
         assert True
         
-        
-# def test_cityphoto():
-#     photo_link = UnplashCityPhotoHelper().get_city_photo(city='Pune')
-#     site = urlopen(photo_link)
-#     meta = site.info() 
-#     if meta["content-type"] in image_formats: 
-#         assert True
