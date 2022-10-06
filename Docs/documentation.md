@@ -66,3 +66,4 @@ The below screenshots give the glance of the working of our project.
 
 ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%205.png)
 
+## Functional Testing
