@@ -125,7 +125,7 @@
             return;
         }
 
-        let url = new URL('{% url 'search:city_search' %}');
+        let url = new URL('{{ request.scheme }}://{{ request.get_host }}{% url 'search:city_search' %}');
         url.searchParams.set('q', city);
 
         xhr.onload = function(e) {

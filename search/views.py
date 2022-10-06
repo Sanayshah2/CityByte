@@ -13,7 +13,7 @@ from search.utils.url import URL
 
 @require_http_methods(["GET"])
 def main_page(request):
-    return render(request, 'search/search.html')
+    return render(request, 'search/search.html', context={"request": request})
 
 
 @require_http_methods(["GET"])
@@ -31,7 +31,7 @@ def city_suggestions(request):
 def city_photo(request):
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=request.GET.get("q"))
     return JsonResponse({
-        "path": photo_link
+        "path": photo_link,
     })
 
 
