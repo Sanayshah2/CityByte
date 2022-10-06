@@ -52,3 +52,14 @@ The project basically uses Django for the backend logic. Django is a Python fram
 5. def place_photo: The function place photo has the “photo link” variable that uses fsq_id unique ID for that particular place and renders the photo link.
 
 The below screenshots give the glance of the working of our project.
+
+![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%201.png)
+
+![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%202.png)
+
+![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%203.png)
+
+![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%204.png)
+
+![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%205.png)
+
