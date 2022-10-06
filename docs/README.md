@@ -56,7 +56,7 @@ Firstly, there is a project that needs to be created in Django named CityByte. T
 
 The below screenshots give the glance of the working of our project.
 
-![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%201.png)
+![city 1](https://github.com/therealppk/CityByte/blob/main/Docs/assets/City%201.png)
 
 ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%202.png)
 
