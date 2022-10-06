@@ -19,40 +19,40 @@ Prerequistes required before starting this project
 This section guides you through submitting a bug report for CityByte SE_Project1. 
 Following these guidelines helps maintainers and the community understand your report, reproduce the behavior and find related reports.
 
-Before Submitting A Bug Report
+* Before Submitting A Bug Report
 
-Check the debugging guide
+* Check the debugging guide
 
-Check the FAQs on the forum for a list of common questions and problems.
-Determine which repository the problem should be reported in.
+* Check the FAQs on the forum for a list of common questions and problems.
+* Determine which repository the problem should be reported in.
 
-Perform a cursory search to see if the problem has already been reported. 
+* Perform a cursory search to see if the problem has already been reported. 
 
 ## How Do I Submit A (Good) Bug Report?
 
-Use a clear and descriptive title for the issue to identify the problem.
+* Use a clear and descriptive title for the issue to identify the problem.
 
-Describe the exact steps which reproduce the problem in as many details as possible.
+* Describe the exact steps which reproduce the problem in as many details as possible.
 
-Provide specific examples to demonstrate the steps. 
+* Provide specific examples to demonstrate the steps. 
 
-Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior.
+* Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior.
 
-Explain which behavior you expected to see instead and why.
+* Explain which behavior you expected to see instead and why.
 
-Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem. 
+* Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem. 
 
-If the problem is related to performance or memory, include a CPU profile capture with your report.
+* If the problem is related to performance or memory, include a CPU profile capture with your report.
 
 ## Pull Requests
 
 The process described here has several goals:
 
-Maintain the projects quality
+* Maintain the projects quality
 
-Fix problems that are important to users
+* Fix problems that are important to users
 
-Enable a sustainable system for the projects maintainers to review contributions
+* Enable a sustainable system for the projects maintainers to review contributions
 
 ## How can the project be extended?
 
