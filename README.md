@@ -32,7 +32,7 @@ The below screenshots give the glance of the working of our project:
 This project is deployed on AWS and is live at http://3.88.233.194:8000/
 
 ## Future Scope:
-* Chasing results from API using Redis in order to improve the performance.
+* Caching results from API using Redis in order to improve the performance.
 * Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
 * To run multiple API requests simultaneously, multithreading will be used.
 
