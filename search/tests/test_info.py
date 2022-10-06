@@ -1,17 +1,10 @@
-from django.test import TestCase
 from info.helpers.places import FourSquarePlacesHelper
-from search import views
-import pytest
-from search.helpers.autocomplete import GenericDBSearchAutoCompleteHelper
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from info.helpers.weather import WeatherBitHelper
 from datetime import datetime
 import pytz
 from pytz import timezone
 from search.helpers.photo import UnplashCityPhotoHelper
-from search.utils.search import AmadeusCitySearch
-from urllib.request import urlopen
-image_formats = ("image/png", "image/jpeg", "image/gif")
 
 def test_info_page(request):
     city = 'New York City'
