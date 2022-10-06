@@ -1,12 +1,13 @@
 
-Installation
+# INSTALLATION
 These instructions presume that you have a local copy of the source code tree that you obtained by using "git clone" or by unzipping a tarball or zip file. Additionally, they presume that Python 3.10 or later be installed and available under the name "python."
 
-Python venv, ### Make a virtualenv, most likely in the source root directory:
+## Creating the environment variable
+Make a virtualenv, most likely in the source root directory with the following command.
 
-python -m venv venv
+``` python -m venv venv ```
 
-Activate venv (linux/mac):  bash  source venv/bin/activate which python #Python should now point to venv/bin/python after running the command.
+Activate venv (linux/mac):  bash  source ```venv/bin/activate``` which python #Python should now point to ```venv/bin/python``` after running the command.
 
 venv may be activated using Windows PowerShell by typing:  powershell venv may be activated using Windows PowerShell by typing:
 
@@ -18,12 +19,16 @@ Turn off venv when finished
 
 deactivate
 
-Install as developer: ### Run the following commands to install as a developer while the virtual environment is active as previously mentioned
+## Installing the requirements
 
-pip install -r requirements.txt 
+Install as developer: Run the following commands to install as a developer while the virtual environment is active as previously mentioned
+
+```pip install -r requirements.txt ```
+
+## Running the source code
 
 To run the development server:
 
-python manage.py runserver
+```python manage.py runserver```
 
 Development server starts at http://127.0.0.1:8000
