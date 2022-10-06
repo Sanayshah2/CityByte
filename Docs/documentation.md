@@ -32,3 +32,14 @@ The technologies listed below were used to build the entire project, and it is a
 * BootStrap
 
 Although we have used HTML, CSS and Bootstrap for the frontend logic the user can use any technologies and combine it with backend such as Angular, React etc.
+
+## CODE FUNCTIONALITIES
+
+The project basically uses Django for the backend logic. Django is a Python framework that is useful to build websites. It uses model view and templates architecture. Some of the files used in Django are as follows:-
+* Views.py:- Backend logic is being written in this file. It takes http requests as arguments, imports relevant models and figures out what data needs to be sent to the template and returns the final result.
+* Models.py:- Django has Object Relational Mapping which makes it easier to work with databases.The model provides data from the database.
+* templates/:- They are used to store templates for frontend development and html files.
+* Urls.py:- They are used to set the urls of the django project and apps. The endpoints created are stored in the urls files.
+* Tests.py:- They are used to write the test cases for the code. They are used to check the code.
+* Settings.py:- It has the basic information about the various api’s used and initializes the environment required for the project.
+
