@@ -51,3 +51,8 @@
 | Does your software allow data to be imported and exported using open data formats? | 3 | 
 | Does your software allow communications using open communications protocols? | 3 |
 | Is your software cross-platform compatible? | 3 |
+| Does your software adhere to appropriate accessibility conventions or standards? | 3 |
+| Does your documentation adhere to appropriate accessibility conventions or standards? | 3 |
+| Is your source code stored in a repository under revision control? | 3 |
+| Is each source code release a snapshot of the repository? | 3 |
+| Are releases tagged in the repository? | 3 |
