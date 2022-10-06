@@ -26,10 +26,7 @@ Although we have used HTML, CSS and Bootstrap for the frontend logic the user ca
 
 ## Result:
 The below screenshots give the glance of the working of our project:
-
 ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%206.png) ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%208.png) ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%209.png) ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%2010.png)
-
-
 ## Deployment:
 This project is deployed on AWS and is live at http://3.88.233.194:8000/
 
@@ -40,12 +37,8 @@ This project is deployed on AWS and is live at http://3.88.233.194:8000/
 
 ## Team Members:
 
-Nirav Shah - nshah28
-
-Vishwa Gandhi - vgandhi
-
-Pradyumna Khawas - ppkhawas
-
-Vrushanki Patel - vpatel25
-
-Priya Saroj - pbsaroj
+* Nirav Shah - nshah28
+* Vishwa Gandhi - vgandhi
+* Pradyumna Khawas - ppkhawas
+* Vrushanki Patel - vpatel25
+* Priya Saroj - pbsaroj
