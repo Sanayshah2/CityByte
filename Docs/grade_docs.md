@@ -46,3 +46,8 @@
 | Does your website and documentation describe what support, if any, you provide to users and developers? | 3 | Yes
 | Does your project have an e-mail address or forum that is solely for supporting users? | 3 | Yes
 | Are e-mails to your support e-mail address received by more than one person? | 3 | No
+| Is your software’s architecture and design modular? | 3 | 
+| Does your software use an accepted coding standard or convention? | 3 |
+| Does your software allow data to be imported and exported using open data formats? | 3 | 
+| Does your software allow communications using open communications protocols? | 3 |
+| Is your software cross-platform compatible? | 3 |
