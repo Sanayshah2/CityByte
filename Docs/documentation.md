@@ -80,3 +80,4 @@ Test Case 3: test_photo is our third test case that checks the photo_link, and m
 
 Test Case 4: test_cityphoto is the test case for testing the UnplashCityPhotoHelper which is redirected from photo_link to site, to get the header of the http request. This test case checks whether the content type is an image.
 
+## FUTURE SCOPE
