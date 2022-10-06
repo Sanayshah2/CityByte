@@ -8,3 +8,11 @@
 </p>
 
 ## TEAM MEMBERS
+
+|Nirav Shah | nshah28 |
+|------------|----------|
+| Vishwa Gandhi | vgandhi |
+| Pradymna Khawas | ppkhawas | 
+| Vrushanki Patel | vpatel25 |
+| Priya Saroj | pbsaroj | 
+
