@@ -16,6 +16,10 @@ image_formats = ("image/png", "image/jpeg", "image/gif")
 
 class CityByte_testcase(TestCase):
   def test_main_page(self):
-      #print('hiiiii',render(request, 'search/search.html').status_code,'byeeee')
       assert (render(request, 'search/search.html').status_code ==200)
-      #return render(request, 'search/search.html')
+  def test_cityphoto():
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city='Pune')
+    site = urlopen(photo_link)
+    meta = site.info() 
+    if meta["content-type"] in image_formats:
+      assert True
