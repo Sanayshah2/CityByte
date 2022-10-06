@@ -1,9 +1,10 @@
 # CityByte 
+
+
 [![DOI](https://zenodo.org/badge/541612969.svg)](https://zenodo.org/badge/latestdoi/541612969) ![](https://img.shields.io/github/license/therealppk/CityByte) ![](https://img.shields.io/github/issues/therealppk/CityByte?style=plastic) ![](https://img.shields.io/github/issues-closed-raw/therealppk/CityByte?style=plastic) ![](https://img.shields.io/github/languages/code-size/therealppk/CityByte?style=plastic) ![](https://img.shields.io/github/contributors/therealppk/CityByte?style=plastic)
 <p align="center">
   <img src="https://github.com/therealppk/citybytesrough/blob/main/CityBytes.gif" alt="animated" />
 </p>
-
 ## Introduction
 Moving to a new location can be a daunting endeavor, especially when you have the entire world to choose from. Finding a new home from scratch while prioritizing certain aspects might be very challenging given the variety of nations and cities. However, with the advancement of technology, information from earlier times can now be leveraged to offer a number of vital insights about a certain location. Our project succeeds in one of those objectives. We seek to present that information in our project because there are many other elements that are taken into consideration when choosing a place to reside, such as weather, temperature, entertainment options, landmark locations, education, and many more. The project is totally created using a variety of technologies, including some of the accessible APIs that are utilized to fetch real-time data.
 
@@ -25,6 +26,15 @@ Although we have used HTML, CSS and Bootstrap for the frontend logic the user ca
 The below screenshots give the glance of the working of our project:
 
 ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%206.png) ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%208.png) ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%209.png) ![](https://github.com/therealppk/CityByte/blob/main/Docs/pictures/City%2010.png)
+
+
+## Deployment:
+This project is deployed on AWS and is live at http://3.88.233.194:8000/
+
+## Future Scope:
+* Chasing results from API using Redis in order to improve the performance.
+* Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
+* To run multiple API requests simultaneously, multithreading will be used.
 
 ## Team Members:
 
