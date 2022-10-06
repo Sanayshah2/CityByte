@@ -1,4 +1,3 @@
-from info.helpers.places import FourSquarePlacesHelper
 from search.helpers.photo import UnplashCityPhotoHelper
 from django.test import TestCase
 from urllib.request import urlopen
