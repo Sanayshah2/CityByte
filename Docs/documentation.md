@@ -81,3 +81,7 @@ Test Case 3: test_photo is our third test case that checks the photo_link, and m
 Test Case 4: test_cityphoto is the test case for testing the UnplashCityPhotoHelper which is redirected from photo_link to site, to get the header of the http request. This test case checks whether the content type is an image.
 
 ## FUTURE SCOPE
+
+* Chasing results from API using Redis in order to improve the performance.
+* Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
+* To run multiple API requests simultaneously, multithreading will be used.
