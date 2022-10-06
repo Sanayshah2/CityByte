@@ -67,3 +67,10 @@ e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python
 | Do you provide publicly-available instructions for building your software from the source code? | 3 |
 |  Can you build, or package, your software using an automated tool? e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) | 3 |
 | Do you provide publicly-available instructions for deploying your software? | 3 |
+| Do you have an automated test suite for your software? | 3 |
+| Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code? | 3 |
+| Do you use continuous integration, automatically running tests whenever changes are made to your source code? | 3 |
+| Are your test results publicly visible? | 3 |
+| Are all manually-run tests documented? | 3 |
+| Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software? e.g. release announcements, publications, workshops, conference presentations | 3 |
+| Does your website state how many projects and users are associated with your project? | 3 |
