@@ -1,3 +1,4 @@
+from django.test import TestCase
 from django.shortcuts import render, redirect
 import pytest
 
