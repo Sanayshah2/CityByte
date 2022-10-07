@@ -1,6 +1,6 @@
 # City Byte Testing
 
-### Test this repository
+### Test this repository using following steps:
 ```bash
 git clone https://github.com/therealppk/CityByte
 python -m venv venv
