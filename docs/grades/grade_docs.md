@@ -1,29 +1,29 @@
 |Notes|assessment|evidence|
 |-----|---------|----------|
-|Total Score| 84 | Screenshots attached as evidance |
+|Total Score| 276 | total 92 rows |
 |Workload is spread over the whole team| 3 | Visible in Insights -> Contributors|
 |Number of commits| 3 | Present in Insights -> Contributors|
 |Number of commits: by different people| 3 | Present in Insights -> Contributors|
-|Issues reports: there are **many**| 3 |None|
-|Issues are being closed| 3 |Present in Issues|
+|Issues reports| 3 |Total 34 issue solved and visible in issues|
+|Issues are being closed| 3 |Present in Issues (34 issues closed)|
 |DOI badge: exists| 3 |Visible in Repository|
-|Docs: doco generated, format not ugly | 3 |No documentation|
+|Docs: doco generated, format not ugly | 3 |Present in Docs folder|
 |Docs: what: point descriptions of each class/function (in isolation) | 3 | Explained in README.md|
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z| 3 ||
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing| 3 | Readme |
-|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.| 3 | |
-|Use of version control tools| 3 | |
-|Use of style checkers | 3 | |
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z| 3 |Present in Docs|
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing| 3 | Present in docs and readme |
+|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.| 3 |  |
+|Use of version control tools| 3 | Visible in Repo |
+|Use of style checkers | 3 |  |
 |Use of code formatters. | 3 ||
 |Use of syntax checkers. | 3 ||
-|Use of code coverage | 3 | code coverage badge is not there in readme|
+|Use of code coverage | 3 | code coverage badge is there in readme|
 |Other automated analysis tools| 3 ||
-|Test cases exist| 3 | |
+|Test cases exist| 3 | Present  |
 |Test cases are routinely executed| 3 | |
-|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | |
+|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | Present in repo |
 |Issues are discussed before they are closed| 3 |0 open issues|
-|Chat channel: exists| 3 |not provided|
-|Test cases: a large proportion of the issues related to handling failing cases.| 3 |issues|
+|Chat channel: exists| 3 |  |
+|Test cases: a large proportion of the issues related to handling failing cases.| 3 | visible in issues|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files| 3 | |
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 3 | |
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| 3 | |
@@ -66,7 +66,7 @@ e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python
 | Do you back-up your repository? | 3 |
 | Do you provide publicly-available instructions for building your software from the source code? | 3 |
 |  Can you build, or package, your software using an automated tool? e.g. Make (https://www.gnu.org/software/make/), ANT (http://ant.apache.org/), Maven (https://maven.apache.org/), CMake (https://cmake.org/), Python setuptools (https://pypi.python.org/pypi/setuptools), or R package tools (https://cran.r-project.org/doc/manuals/r-devel/R-exts.html) | 3 |
-| Do you provide publicly-available instructions for deploying your software? | 3 |
+| Do you provide publicly-available instructions for deploying your software? | 3 | |
 | Do you have an automated test suite for your software? | 3 |
 | Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code? | 3 |
 | Do you use continuous integration, automatically running tests whenever changes are made to your source code? | 3 |
@@ -74,3 +74,23 @@ e.g. Ivy (http://ant.apache.org/ivy/), Maven (https://maven.apache.org/), Python
 | Are all manually-run tests documented? | 3 |
 | Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software? e.g. release announcements, publications, workshops, conference presentations | 3 |
 | Does your website state how many projects and users are associated with your project? | 3 |
+| Do you provide success stories on your website?| 3 | |
+| Do you list your important partners and collaborators on your website?| 3 |  |
+| Do you list your project's publications on your website or link to a resource where these are available?| 3 |  |
+| Do you list third-party publications that refer to your software on your website or link to a resource where these are available?| 3 |  |
+|Can users subscribe to notifications to changes to your source code repository?| 3 |  |
+|If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model?| 3 |  |
+|Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project?| 3 |  |
+|Do you have a contributions policy?| 3 |  |
+|Is your contributions' policy publicly available?| 3 |  |
+|Do contributors keep the copyright/IP of their contributions?| 3 |  |
+|Does your website and documentation clearly state the copyright owners of your software and documentation?| 3 |  |
+|Does each of your source code files include a copyright statement?| 3 |  |
+|Does your website and documentation clearly state the licence of your software?| 3 |  |
+|Is your software released under an open source licence?| 3 |  |
+|Is your software released under an OSI-approved open-source licence?| 3 |  |
+|Does each of your source code files include a licence header?| 3 |  |
+|Do you have a recommended citation for your software?| 3 |  |
+|Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)?| 3 |  |
+|Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?| 3 |  |
+|Do you make timely announcements of the deprecation of components, APIs, etc.?| 3 |  |
