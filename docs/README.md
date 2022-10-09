@@ -4,7 +4,7 @@
 ## SOFTWARE CODE DOCUMENTATION
 
 <p align="center">
-    <img width="300" src="docs/assets/images.jfif" alt="NC Logo">
+    <img width="300" src="https://github.com/therealppk/CityByte/blob/main/docs/assets/images.jfif" alt="NC Logo">
 </p>
 
 ## TEAM MEMBERS
