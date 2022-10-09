@@ -19,3 +19,5 @@ To generate index.html in htmlcov
 ```
 python -m coverage html
 ```
+
+![](https://github.com/therealppk/CityByte/blob/main/docs/assets/code_coverage.png)
