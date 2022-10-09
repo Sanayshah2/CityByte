@@ -38,6 +38,7 @@ This project is deployed on AWS and is live at http://3.88.233.194:8000/
 
 ## Code Coverage
 [![codecov](https://codecov.io/gh/therealppk/CityByte/branch/main/graph/badge.svg?token=HRK9X7OI2J)](https://codecov.io/gh/therealppk/CityByte)
+(https://github.com/therealppk/CityByte/blob/main/docs/assets/code_coverage.png)
 
 ## Future Scope
 * Caching results from API using Redis in order to improve the performance.
