@@ -11,3 +11,4 @@ sqlparse==0.4.3
 urllib3==1.26.12
 backports.zoneinfo==0.2.1;python_version<"3.9"
 pytest
+flake8
