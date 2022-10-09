@@ -39,4 +39,7 @@ jobs:
         coverage run --source=info,search --omit=*/migrations/* ./manage.py test
         coverage report
         coverage html
-#       name: Generate Report
+        
+    - name: Upload cov
+      uses: codecov/codecov-action@v2
+
