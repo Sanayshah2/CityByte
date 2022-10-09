@@ -5,7 +5,7 @@ Install Requirements.
 pip install -r requirements.txt
 ```
 
-To run coverage for both the applications.
+To run coverage for both the applications info and search.
 ```
 python -m coverage run --source=info,search --omit=*/migrations/* ./manage.py test
 ```
