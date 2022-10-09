@@ -14,8 +14,8 @@ class PhotoUtilBase(ABC):
     @abstractmethod
     def get_photos(self, city: str, **kwargs):
         pass
-    
-    
+
+
 class Unsplash(PhotoUtilBase):
     class Orientation:
         LANDSCAPE = "landscape"

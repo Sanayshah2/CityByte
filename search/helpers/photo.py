@@ -12,7 +12,7 @@ class CityPhotoHelperBase(ABC):
     def get_city_photo(self, city: str):
         pass
 
-    
+
 class UnplashCityPhotoHelper(CityPhotoHelperBase):
     def __init__(self, klass: PhotoUtilBase = None, url: URL = None):
         if url is None:

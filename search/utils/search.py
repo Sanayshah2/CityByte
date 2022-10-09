@@ -5,6 +5,7 @@ from django.conf import settings
 
 from search.utils.url import URL
 
+
 class SearchUtilBase(ABC):
     _url: URL = None
 
@@ -28,13 +29,13 @@ class GeoDB(SearchUtilBase):
         )
 
         return response.json()
-    
+
 
 class AmadeusCitySearch(SearchUtilBase):
     def __init__(self, url: URL):
         self._access_token = None
         super().__init__(url)
-    
+
     def get_city_suggestions(self, city: str, **kwargs):
         params = self._url.with_default_params({"keyword": city})
         params.update(kwargs)

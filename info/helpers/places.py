@@ -11,6 +11,7 @@ class CityPlacesHelperBase(ABC):
     def get_places(self, city: str, **kwargs):
         pass
 
+
 class FourSquarePlacesHelper(CityPlacesHelperBase):
     def __init__(self, klass: PlacesUtilBase = None, url: URL = None):
         if url is None:
