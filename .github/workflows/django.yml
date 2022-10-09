@@ -45,4 +45,4 @@ jobs:
       with:
         token: 3ad2c88d-e733-429b-962e-bc9db2760b01
     - name: lint with flake
-      run: flake8
+      run: flake8 --ignore=E501
