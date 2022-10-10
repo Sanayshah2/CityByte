@@ -3,7 +3,7 @@
 
 [![DOI](https://zenodo.org/badge/541612969.svg)](https://zenodo.org/badge/latestdoi/541612969) ![](https://img.shields.io/github/license/therealppk/CityByte) ![](https://img.shields.io/github/issues/therealppk/CityByte?style=plastic) ![](https://img.shields.io/github/issues-closed-raw/therealppk/CityByte?style=plastic) ![](https://img.shields.io/github/languages/code-size/therealppk/CityByte?style=plastic) ![](https://img.shields.io/github/contributors/therealppk/CityByte?style=plastic) [![Django CI](https://github.com/therealppk/CityByte/actions/workflows/django.yml/badge.svg)](https://github.com/therealppk/CityByte/actions/workflows/django.yml)
 
-![](https://therealppk.github.io/CityByte/reports/flake8/flake8-badge.svg?dummy=8484744)](https://therealppk.github.io/CityByte/reports/flake8/index.html)
+
 
 <p align="center">
   <img src="https://github.com/therealppk/citybytesrough/blob/main/CityBytes.gif" alt="animated" />
