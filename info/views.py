@@ -44,6 +44,10 @@ def info_page(request):
         city=f"{city}, {country}", categories="12082", sort="RELEVANCE", limit=5)
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
 
+    Event_info = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="14000", sort="RELEVANCE", limit=5)
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+    
 
     return render(
         request, 'search/city_info.html',
@@ -56,5 +60,6 @@ def info_page(request):
             "photo_link": photo_link,
             'Education_info':Education_info,
             "Organization_info":Organization_info,
+            "Event_info":Event_info,
         }
     )
