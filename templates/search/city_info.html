@@ -5,8 +5,11 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
@@ -243,5 +246,31 @@
         </div>
     {% endif %}
 </div>
+
+<script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("input", myFunction);
+
+    function myFunction(e) {
+      var filter = e.target.value.toUpperCase();
+
+      var list = document.getElementById("vishwa");
+      var divs = list.getElementsByTagName("div");
+      for (var i = 0; i < divs.length; i++) {
+          var a = divs[i].getElementsByTagName("p")[0];
+
+        if (a) {
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            divs[i].style.display = "";
+          } else {
+            divs[i].style.display = "none";
+          }
+        }
+      }
+
+    }
+
+        </script>
+
 </body>
 </html>
