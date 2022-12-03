@@ -177,3 +177,5 @@ WEATHER_BIT_CONFIG = {
         'X-RapidAPI-Host': os.environ.get("WEATHER_BIT_X_RAPID_API_HOST"),
     }
 }
+
+
