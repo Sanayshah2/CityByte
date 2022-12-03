@@ -12,3 +12,5 @@ urllib3==1.26.12
 backports.zoneinfo==0.2.1;python_version<"3.9"
 pytest
 flake8
+redis==4.3.5
+django-debug-toolbar==3.7.0
