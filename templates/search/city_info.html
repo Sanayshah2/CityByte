@@ -301,6 +301,25 @@
         {% endfor %}
         </p>
     </div>
+
+    <div class="d-flex flex-wrap" style="margin: 1rem;">
+        <p>
+        <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Health</h2>
+
+        {% for place in Health_info.results %}
+            <div class="card" style="width: 25rem;">
+                <img src="{% url 'info:place_photo' %}?fsq_id={{ place.fsq_id }}" class="card-img-top" alt="{{ place.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ place.name }}</h5>
+                    <p class="card-text">{{ place.location.formatted_address }}</p>
+                </div>
+                <div class="card-footer">
+                    {{ place.categories.0.name }}
+                </div>
+            </div>
+        {% endfor %}
+        </p>
+    </div>
 </div>
 
 <script>
