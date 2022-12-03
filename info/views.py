@@ -47,6 +47,10 @@ def info_page(request):
     Event_info = FourSquarePlacesHelper().get_places(
         city=f"{city}, {country}", categories="14000", sort="RELEVANCE", limit=5)
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+
+    Health_info = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="15000", sort="RELEVANCE", limit=5)
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
     
 
     return render(
@@ -61,5 +65,6 @@ def info_page(request):
             'Education_info':Education_info,
             "Organization_info":Organization_info,
             "Event_info":Event_info,
+            "Health_info":Health_info,
         }
     )
