@@ -36,8 +36,13 @@ def info_page(request):
         city=f"{city}, {country}", categories="16000", sort="RELEVANCE", limit=5)
     arts_info = FourSquarePlacesHelper().get_places(
         city=f"{city}, {country}", categories="10000", sort="RELEVANCE", limit=5)
-
+    Education_info = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="12013", sort="RELEVANCE", limit=5)
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+    Education_info = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="12013", sort="RELEVANCE", limit=5)
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+
 
     return render(
         request, 'search/city_info.html',
@@ -48,5 +53,6 @@ def info_page(request):
             "outdoor_info": outdoor_info,
             "arts_info": arts_info,
             "photo_link": photo_link,
+            'Education_info':Education_info
         }
     )

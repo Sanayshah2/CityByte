@@ -19,6 +19,7 @@ from django.urls import path, include
 from search.views import main_page
 from info.views import info_page
 import debug_toolbar
+
 urlpatterns = [
     path('', main_page, name="main_page"),
     path('city', info_page, name="info_page"),
