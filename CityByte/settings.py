@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'corsheaders',
     'search',
     'info',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -178,4 +180,4 @@ WEATHER_BIT_CONFIG = {
     }
 }
 
-
+INTERNAL_IPS = ['127.0.0.1',]
