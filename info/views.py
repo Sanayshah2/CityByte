@@ -52,6 +52,10 @@ def info_page(request):
         city=f"{city}, {country}", categories="15000", sort="RELEVANCE", limit=5)
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
     
+    Sports = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="18000", sort="RELEVANCE", limit=5)
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+    
     Travel_info = FourSquarePlacesHelper().get_places(
         city=f"{city}, {country}", categories="19000", sort="RELEVANCE", limit=5)
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
@@ -71,5 +75,6 @@ def info_page(request):
             "Event_info": Event_info,
             "Health_info": Health_info,
             "Travel_info": Travel_info,
+            "Sports": Sports,
         }
     )
