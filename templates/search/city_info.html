@@ -186,6 +186,8 @@
             </div>
         </div>
     </div>
+    
+    <!-- Dining Information -->
     <h2 style="margin: 4rem 0 1rem 1rem;">Top Rated Dining Spots</h2>
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         {% for place in dining_info.results %}
@@ -201,6 +203,7 @@
             </div>
         {% endfor %}
     </div>
+    <!-- Top Landmark Information -->
     <h2 style="margin: 4rem 0 1rem 1rem;">Top Landmark Spots</h2>
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         {% for place in outdoor_info.results %}
@@ -216,6 +219,7 @@
             </div>
         {% endfor %}
     </div>
+    <!-- Top Arts Location Information -->
     <h2 style="margin: 4rem 0 1rem 1rem;">Top Arts Spots</h2>
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         {% for place in arts_info.results %}
@@ -231,20 +235,7 @@
             </div>
         {% endfor %}
     </div>
-    {% if airport_info.results %}
-        <h2 style="margin: 4rem 0 1rem 1rem;">Airports</h2>
-        <div class="d-flex flex-wrap" style="margin: 1rem;">
-            {% for place in airport_info.results %}
-                <div class="card" style="width: 18rem;">
-                    <img src="{% url 'info:place_photo' %}?fsq_id={{ place.fsq_id }}" class="card-img-top" alt="{{ place.name }}">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 0.75rem">{{ place.name }}</h5>
-                        <p class="card-text" style="font-size: 1rem;">{{ place.location.formatted_address }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    {% endif %}
+    <!-- Education Information -->
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         <p>
         <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Education</h2>
@@ -263,7 +254,7 @@
         {% endfor %}
         </p>
     </div>
-
+    <!-- Organization Information -->
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         <p>
         <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Organization</h2>
@@ -282,7 +273,7 @@
         {% endfor %}
         </p>
     </div>
-
+    <!-- Events Information -->
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         <p>
         <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Event</h2>
@@ -301,7 +292,7 @@
         {% endfor %}
         </p>
     </div>
-
+    <!-- Health Information -->
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         <p>
         <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Health</h2>
@@ -320,7 +311,7 @@
         {% endfor %}
         </p>
     </div>
-
+    <!-- Travel Information -->
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         <p>
         <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Travel</h2>
@@ -339,7 +330,23 @@
         {% endfor %}
         </p>
     </div>
-
+    <!-- Airport Information -->
+    {% if airport_info.results %}
+        <h2 style="margin: 4rem 0 1rem 1rem;">Airports</h2>
+        <div class="d-flex flex-wrap" style="margin: 1rem;">
+            {% for place in airport_info.results %}
+                <div class="card" style="width: 18rem;">
+                    <img src="{% url 'info:place_photo' %}?fsq_id={{ place.fsq_id }}" class="card-img-top" alt="{{ place.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 0.75rem">{{ place.name }}</h5>
+                        <p class="card-text" style="font-size: 1rem;">{{ place.location.formatted_address }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    
+    <!-- Sports Information -->
     <div class="d-flex flex-wrap" style="margin: 1rem;">
         <p>
         <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Sports</h2>
@@ -357,6 +364,25 @@
             </div>
         {% endfor %}
         </p>
+    </div>
+    <!-- Community Information -->
+    <div class="d-flex flex-wrap" style="margin: 1rem;">
+            <p>
+            <h2 class="col-md-12 col-sm-12" style="margin: 4rem 0 1rem 1rem;">Community</h2>
+    
+            {% for place in Community.results %}
+                <div class="card" style="width: 25rem;">
+                    <img src="{% url 'info:place_photo' %}?fsq_id={{ place.fsq_id }}" class="card-img-top" alt="{{ place.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ place.name }}</h5>
+                        <p class="card-text">{{ place.location.formatted_address }}</p>
+                    </div>
+                    <div class="card-footer">
+                        {{ place.categories.0.name }}
+                    </div>
+                </div>
+            {% endfor %}
+            </p>
     </div>
 </div>
 
