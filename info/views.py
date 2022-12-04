@@ -60,6 +60,11 @@ def info_page(request):
         city=f"{city}, {country}", categories="19000", sort="RELEVANCE", limit=5)
     photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
     
+    Community = FourSquarePlacesHelper().get_places(
+        city=f"{city}, {country}", categories="12000", sort="RELEVANCE", limit=5)
+    photo_link = UnplashCityPhotoHelper().get_city_photo(city=city)
+    
+    #All features done
 
     return render(
         request, 'search/city_info.html',
@@ -76,5 +81,6 @@ def info_page(request):
             "Health_info": Health_info,
             "Travel_info": Travel_info,
             "Sports": Sports,
+            "Community": Community
         }
     )
