@@ -42,15 +42,29 @@ This project is deployed on AWS and is live at http://3.88.233.194:8000/
 
 ![](https://github.com/therealppk/CityByte/blob/main/docs/assets/code_coverage.png)
 
-## Future Scope
+<!-- ## Future Scope
 * Caching results from API using Redis in order to improve the performance.
 * Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
-* To run multiple API requests simultaneously, multithreading will be used.
+* To run multiple API requests simultaneously, multithreading will be used. -->
 
-## Team Members
+## Improvements
+- Debug Tool
+- Caching results from API using Redis in order to improve the performance.
+- Multithreading, to run multiple API requests simultaneously.
 
+
+## Contributors
+
+#### Project 1
 * Nirav Shah - nshah28
 * Vishwa Gandhi - vgandhi
 * Pradyumna Khawas - ppkhawas
 * Vrushanki Patel - vpatel25
 * Priya Saroj - pbsaroj
+
+#### Project 2
+* Elizabeth Lin
+* Neel Shah
+* Sanay Shah
+* Shaival Shah
+* Shivesh Jha
