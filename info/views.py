@@ -8,6 +8,28 @@ from info.helpers.places import FourSquarePlacesHelper
 from info.helpers.weather import WeatherBitHelper
 from search.helpers.photo import UnplashCityPhotoHelper
 
+#multithreading. Static for now
+def callfunc(category):
+    city="pune"
+    country="India"
+    return (FourSquarePlacesHelper().get_places(city=f"{category[0]}, {category[1]}", categories=category[2], sort="RELEVANCE", limit=5))
+ 
+pool = multiprocessing.Pool(processes = 4)
+list=[[13065],[19040],[16000],[10000],[12013],[12082], [14000], [15000], [19000], [18000], [12000]]
+results=pool.map(callfunc,list)
+
+dining_info=results[0]
+airport_info=results[1]
+outdoor_info=results[2]
+arts_info=results[3]
+Education_info=results[4]
+Organization_info=results[5]
+Event_info=results[6]
+Health_info=results[7]
+Travel_info=results[8]
+Sports=results[9]
+Community = results[10]
+
 
 @require_http_methods(["GET"])
 def place_photo(request):
