@@ -29,13 +29,13 @@ Although we have used HTML, CSS and Bootstrap for the frontend logic the user ca
 ## Result
 The below screenshots give the glance of the working of our project:
 
-![](https://github.com/therealppk/CityByte/blob/main/docs/assets/City%206.png)
-![](https://github.com/therealppk/CityByte/blob/main/docs/assets/City%208.png)
-![](https://github.com/therealppk/CityByte/blob/main/docs/assets/City%209.png) 
-![](https://github.com/therealppk/CityByte/blob/main/docs/assets/City%2010.png)
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS1.png)
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS2.png)
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS3.png) 
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS4.png)
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS5.png)
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS6.png)
 
-## Deployment:
-This project is deployed on AWS and is live at http://3.88.233.194:8000/
 
 ## Code Coverage
 [![codecov](https://codecov.io/gh/therealppk/CityByte/branch/main/graph/badge.svg?token=HRK9X7OI2J)](https://codecov.io/gh/therealppk/CityByte)
@@ -63,8 +63,8 @@ This project is deployed on AWS and is live at http://3.88.233.194:8000/
 * Priya Saroj - pbsaroj
 
 #### Project 2
-* Elizabeth Lin
-* Neel Shah
-* Sanay Shah
-* Shaival Shah
-* Shivesh Jha
+* Elizabeth Lin - etlin
+* Neel Shah - npshah6
+* Sanay Shah - sshah34
+* Shaival Shah - sshah35
+* Shivesh Jha - sjha7
