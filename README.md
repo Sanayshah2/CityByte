@@ -37,15 +37,8 @@ The below screenshots give the glance of the working of our project:
 ![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/IS6.png)
 
 
-## Code Coverage
-[![codecov](https://codecov.io/gh/therealppk/CityByte/branch/main/graph/badge.svg?token=HRK9X7OI2J)](https://codecov.io/gh/therealppk/CityByte)
 
-![](https://github.com/therealppk/CityByte/blob/main/docs/assets/code_coverage.png)
 
-<!-- ## Future Scope
-* Caching results from API using Redis in order to improve the performance.
-* Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
-* To run multiple API requests simultaneously, multithreading will be used. -->
 
 ## SCALABILITY
 1. New Features:
@@ -80,6 +73,12 @@ The below screenshots gives the glance of the new features that we added in the 
 ![city5](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(4).png)
 
 ![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(5).png)
+
+## Code Coverage
+[![codecov](https://codecov.io/gh/therealppk/CityByte/branch/main/graph/badge.svg?token=HRK9X7OI2J)](https://codecov.io/gh/therealppk/CityByte)
+
+![](https://github.com/therealppk/CityByte/blob/main/docs/assets/code_coverage.png)
+
 
 ## FUTURE SCOPE
 
