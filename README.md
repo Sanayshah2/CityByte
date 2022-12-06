@@ -81,6 +81,11 @@ The below screenshots gives the glance of the new features that we added in the 
 
 ![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(5).png)
 
+## FUTURE SCOPE
+
+* Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
+* Since REDIS is being used, if this website is being used by many people, RAM will run into storage problems. So, to further enhance the functionality of this website, storage in a cloud can be used.
+
 ## Contributors
 
 #### Project 1
