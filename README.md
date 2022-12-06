@@ -82,11 +82,6 @@ The below screenshots gives the glance of the new features that we added in the 
 
 ![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(5).png)
 
-## Code Coverage
-[![codecov](https://codecov.io/gh/therealppk/CityByte/branch/main/graph/badge.svg?token=HRK9X7OI2J)](https://codecov.io/gh/therealppk/CityByte)
-
-![](https://github.com/therealppk/CityByte/blob/main/docs/assets/code_coverage.png)
-
 
 ## FUTURE SCOPE
 
