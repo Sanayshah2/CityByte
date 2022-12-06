@@ -26,6 +26,11 @@ The technologies listed below were used to build the entire project, and it is a
 
 Although we have used HTML, CSS and Bootstrap for the frontend logic the user can use any technologies and combine it with backend such as Angular, React etc.
 
+
+## Video
+<a href="https://youtu.be/5A2mUY-ouJ8">
+<img src="https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(1).png" width="400" height="200"></a>
+
 ## Result
 The below screenshots give the glance of the working of our project:
 
