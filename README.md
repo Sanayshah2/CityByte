@@ -47,11 +47,39 @@ The below screenshots give the glance of the working of our project:
 * Addition of search bar with category filter, that will help the user to search based on his/ her requirements.
 * To run multiple API requests simultaneously, multithreading will be used. -->
 
-## Improvements
-- Debug Tool
-- Caching results from API using Redis in order to improve the performance.
-- Multithreading, to run multiple API requests simultaneously.
+## SCALABILITY
+1. New Features:
+* Previously, the information that CityByte provided were limited to top rated dinning spots, top rated entertainment spots, landmark spots, artistic spots, and airports.
+* Now, we have added some exciting new features to this website to make it more comprehensive. Newly added features include organization, events, health, travel, sports, and community which is clearly visible in the results.
 
+2. Caching
+* In order to reduce the time it takes to respond, we implemented caching using Redis.
+* When a http request was made in the past, the response was always provided by using APIs each time the user entered in the city. Now that the project has been scaled, a database has been created that stores city information when the API is first called.
+* Hence, when a user types the same city the database is called several times to provide the response. Due to the time saved from not calling the APIs, this has improved performance when there are numerous requests coming in for a some city.
+* We developed a debug toolbar for the website to show information about the caching time in order to display this functionality. 
+* Below is the screenshot of the debug toolbar which gets request from the API. It also displays the CPU time and request comes from "set" method before implementing caching.
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/API.png)
+* After implementing the caching, the following screenshot gives information of the "get" requests coming from caching instead of "set" requests. Also, the difference between the CPU time is visible.
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/cache.png)
+
+
+3. Multiprocessing:
+* Initially, the project consisted of various APIs being called serially, one after another to provide the desired response. This resulted in a lot of time being occupied for getting the results from APIs. 
+* So, the concept of Multiprocessing in which two or more processors in a computer simultaneously process two or more different portions of the same program (set of instructions) was implemented.
+
+The below screenshots gives the glance of the new features that we added in the project.
+
+![city 1](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(1).png)
+
+![city2](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY2.png)
+
+![city3](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(2).png)
+
+![city4](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(3).png)
+
+![city5](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(4).png)
+
+![](https://github.com/Sanayshah2/CityByte/blob/main/docs/assets/NY1%20(5).png)
 
 ## Contributors
 
